@@ -1,15 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/594207/pexels-photo-594207.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+/* Header Section */
+header {
+  background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red */
+  color: yellow;
+  padding: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+
+header h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* Subtitle Text */
+.subtitle {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2em;
+  margin: 10px 0;
+  color: black;
+  text-shadow: 2px 2px 4px yellow;
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.image-container img {
+  width: 60%; 
+  max-width: 300px; 
+  height: auto; /* Keeps aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.9s ease, filter 0.9s ease; /* Smooth hover effect */
+  filter: grayscale(80%); /* Add grayscale for "ugly" effect */
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  filter: grayscale(0); /* Remove grayscale on hover */
+}
+
+
